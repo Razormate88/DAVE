@@ -5,13 +5,6 @@ import time
 import os
 from openai import AzureOpenAI
 
-# Azure OpenAI Configuration
-endpoint = os.getenv("ENDPOINT_URL", "https://dcai-datamyte-01.openai.azure.com/")
-model_name = os.getenv("MODEL_NAME", "gpt-4o-mini")
-deployment = os.getenv("DEPLOYMENT_NAME", "datamyte-kb")
-subscription_key = os.getenv("AZURE_OPENAI_API_KEY", "Ef2xSd5l55RSviazg3sEsnRSBGQ2S3BxhUadt7tCw1IIip3VVBd1JQQJ99BCACHYHv6XJ3w3AAABACOGHCb3")
-api = "2024-05-01-preview"
-
 # Initialize Azure OpenAI Client
 client = AzureOpenAI(
     azure_endpoint=endpoint,
